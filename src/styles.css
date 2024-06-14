@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .note-form,
+  .note-list {
+    margin-bottom: 20px;
+  }
+
+  .note-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    height: 50vh;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+  }
+  
+  
+  .note-form input,
+  .note-form textarea,
+  .note-item input,
+  .note-item textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .note-form button,
+  .note-item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .note-form	button{
+    width:92%;
+  }
+  
+  .note-form button:hover,
+  .note-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .note-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .note-form input,
+    .note-form textarea,
+    .note-item input,
+    .note-item textarea {
+      font-size: 14px;
+    }
+  }
+  
+  /* Notification Toasts */
+.error-toast,
+.success-toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.error-toast {
+  background-color: #dc3545;
+}
+
+.success-toast {
+  background-color: #28a745;
+}
+
+.error-toast.ng-leave-active,
+.success-toast.ng-leave-active {
+  opacity: 0;
+}

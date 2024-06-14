@@ -1,0 +1,215 @@
+/* src/app/landing-page/landing-page.component.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.landing-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.navbar-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-btn:hover {
+  background-color: #2980b9;
+}
+
+.header {
+  width: 100%;
+  background: linear-gradient(135deg, #3498db, #8e44ad);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-btn {
+  background-color: white;
+  color: #3498db;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #2980b9;
+  color: white;
+}
+
+section {
+  width: 100%;
+  max-width: 1000px;
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.features {
+  background-color: #f8f9fa;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-item {
+  flex: 1 1 300px;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature-item img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-us{
+  background: linear-gradient(135deg, #3498db, #8e44ad);
+  color: white;
+
+  ion-icon{
+    color: white;
+  }
+}
+
+.about-content img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .feature-item {
+    margin: 10px 0;
+  }
+
+  .about-content img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: calc(100% - 30px);
+    margin-bottom: 10px;
+  }
+
+  .contact button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+ion-icon{
+  font-size: 40px;
+  color:#2980b9
+}

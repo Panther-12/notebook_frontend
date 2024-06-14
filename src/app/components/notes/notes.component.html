@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Notes</h1>
+    <div class="note-form">
+      <input [(ngModel)]="newNote.title" placeholder="Title" #title="ngModel" required />
+      <div *ngIf="title.invalid && (title.dirty || title.touched)">
+        <small class="error">Title is required</small>
+      </div>
+      <textarea [(ngModel)]="newNote.content" placeholder="Content" #content="ngModel" required></textarea>
+      <div *ngIf="content.invalid && (content.dirty || content.touched)">
+        <small class="error">Content is required</small>
+      </div>
+      <button (click)="addNote()" [disabled]="!title.valid || !content.valid">Add Note</button>
+    </div>
+    <div class="note-list">
+      <div *ngFor="let note of notes" class="note-item">
+        <input [(ngModel)]="note.NoteTitle"/>
+        <textarea [(ngModel)]="note.NoteContent"></textarea>
+        <button (click)="deleteNote(note.NoteID)">Delete</button>
+        <button (click)="updateNote(note.NoteID, {title: note.NoteTitle, content: note.NoteContent, created_at: note.CreatedAt || ''})" style="margin-left:20px;">Update</button>
+      </div>
+    </div>
+    <div *ngIf="errorMessage" class="error-toast">
+      {{ errorMessage }}
+    </div>
+    <div *ngIf="successMessage" class="success-toast">
+      {{ successMessage }}
+    </div>
+  </div>
+  

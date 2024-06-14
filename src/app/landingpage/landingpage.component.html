@@ -1,0 +1,48 @@
+<!-- src/app/landing-page/landing-page.component.html -->
+<div class="landing-container">
+  <header class="header">
+    <div class="hero">
+      <h1>Organize Your Thoughts, Seamlessly</h1>
+      <p>The best app for managing your notes efficiently.</p>
+      <button routerLink="/notes" class="hero-btn">Start Now</button>
+    </div>
+  </header>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <ion-icon name="easel-outline"></ion-icon>
+        <h3>Easy to Use</h3>
+        <p>Intuitive interface that allows you to take notes effortlessly.</p>
+      </div>
+      <div class="feature-item">
+        <ion-icon name="shield-checkmark-outline"></ion-icon>
+        <h3>Secure</h3>
+        <p>Your notes are securely stored and only accessible to you.</p>
+      </div>
+      <div class="feature-item">
+        <ion-icon name="accessibility-outline"></ion-icon>
+        <h3>Accessible</h3>
+        <p>Access your notes from any device, anytime, anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <ion-icon name="people-outline"></ion-icon>
+      <p>We are committed to providing the best note-taking experience for our users. Our team of dedicated professionals works tirelessly to improve the app and ensure your satisfaction.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <form (submit)="onSubmit()">
+      <input type="email" placeholder="Your email" required>
+      <textarea placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</div>
