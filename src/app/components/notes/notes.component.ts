@@ -34,6 +34,10 @@ export class NotesComponent implements OnInit {
   }
 
   addNote(): void {
+    if (!this.newNote.title || !this.newNote.content) {
+      this.showError('Please fill out all required fields.');
+      return;
+    }
     this.notesService.addNote(this.newNote).subscribe(
       note => {
         this.notes.push(note);
