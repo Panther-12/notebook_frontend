@@ -1,5 +1,21 @@
 # Notebook
 
+### About Application Notebook
+
+_Application Notebook_ is a powerful tool designed to streamline your data analysis and computational tasks. It combines the power of data processing libraries with an intuitive interface, making it easy for both beginners and experienced developers to work with data.
+
+### Features
+
+- **Interactive Coding**: Write and execute code in an interactive environment.
+- **Data Visualization**: Create beautiful and insightful charts and graphs.
+- **Collaboration**: Share your notebooks and collaborate with others.
+- **Extensibility**: Extend the functionality with a wide range of plugins and extensions.
+
+### Why Application Notebook?
+
+_Application Notebook_ is designed with the user in mind. It's not just about writing code, it's about creating a seamless experience for data analysis, machine learning, and computational tasks. With _Application Notebook_, you can focus on what matters most - deriving insights from your data.
+
+Join us on this exciting journey and let's explore the world of data together with _Application Notebook_!
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
 ## Development server
