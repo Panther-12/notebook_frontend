@@ -45,13 +45,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Operations
 
-<ul class="timeline">
-  <li class="timeline-item">2007: Started college</li>
-  <li class="timeline-item">2011: Graduated from college</li>
-  <li class="timeline-item">2012: Started first job</li>
-  <li class="timeline-item">2015: Promoted to senior position</li>
-</ul>
-
 1. Get all notes
    ![Get Operation](public/assets/images/ALL_NOTES.PNG)
 2. Add a note
