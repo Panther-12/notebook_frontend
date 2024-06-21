@@ -28,4 +28,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-**RUN THE BACKEND TO GET THE COMPLETE EXPERIENCE**
+**`RUN THE BACKEND TO GET THE COMPLETE EXPERIENCE`**
+
+## Operations
+
+1. Get all notes
+   ![Get Operation](public/assets/images/ALL_NOTES.PNG)
+2. Add a note
+   ![Create Operation](public/assets/images/ADD_NOTE_1.png)
+   ![Create Operation](public/assets/images/ADD_NOTE2.png)
+3. Update a note
+   ![Update Operation](public/assets/images/UPDATE%20NOTE.png)
+4. Delete a note
+   ![Delete Operation](public/assets/images/DELETE%20NOTE.png)
+5. Form error handling
+   ![Error handling Operation](public/assets/images/ERROR_HANDLING.PNG)

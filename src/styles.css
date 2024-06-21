@@ -1,10 +1,12 @@
-/* Global styles */
+/* styles.css */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-  }
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
   
   .container {
     max-width: 800px;
@@ -105,4 +107,18 @@ body {
 .error-toast.ng-leave-active,
 .success-toast.ng-leave-active {
   opacity: 0;
+}
+
+.success-snackbar {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.error-snackbar {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.content {
+  margin: 20px;
 }

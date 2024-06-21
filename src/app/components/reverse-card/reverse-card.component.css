@@ -1,0 +1,63 @@
+.reverse-card {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+mat-error {
+  color: red;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 80px;
+  transition: width 0.3s;
+  /* margin-top: 60px; */
+  background-color: rgb(125, 125, 228);
+  color: white;
+}
+
+.sidenav:hover {
+  width: 200px;
+}
+
+.mat-nav-list .mat-list-item {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.mat-nav-list .mat-list-item span {
+  margin-left: 10px;
+  color: white;
+}
+.mat-nav-list .mat-list-item mat-icon {
+  color: white; /* Icon color */
+}
+
+.content {
+  margin: 20px;
+}
+.success-snackbar {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.error-snackbar {
+  background-color: #f44336; /* Red */
+  color: white;
+}

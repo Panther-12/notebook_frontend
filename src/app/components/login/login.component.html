@@ -1,0 +1,15 @@
+<!-- src/app/login/login.component.html -->
+<div class="auth-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <div class="form-group">
+        <input type="email" [(ngModel)]="loginData.email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" [(ngModel)]="loginData.password" name="password" placeholder="Password" required>
+      </div>
+      <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  
