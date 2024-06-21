@@ -27,10 +27,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
 
-
-**`RUN THE BACKEND TO GET THE COMPLETE EXPERIENCE`**
-
 ## Operations
+
+<ul class="timeline">
+  <li class="timeline-item">2007: Started college</li>
+  <li class="timeline-item">2011: Graduated from college</li>
+  <li class="timeline-item">2012: Started first job</li>
+  <li class="timeline-item">2015: Promoted to senior position</li>
+</ul>
 
 1. Get all notes
    ![Get Operation](public/assets/images/ALL_NOTES.PNG)
@@ -43,3 +47,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    ![Delete Operation](public/assets/images/DELETE%20NOTE.png)
 5. Form error handling
    ![Error handling Operation](public/assets/images/ERROR_HANDLING.PNG)
+
+
+
+
+
+
+
+
+## RUN THE BACKEND CODE FOR A COMPLETE EXPERIENCE
+
+[*Link to backend code ](https://github.com/Panther-12/teach2give_tasks/tree/main/notebook)
