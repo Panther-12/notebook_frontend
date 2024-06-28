@@ -8,6 +8,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { provideHttpClientTesting } from '@angular/common/http/testing';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(), provideHttpClient(withFetch()), { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    provideIonicAngular({ mode: 'ios' }), provideAnimationsAsync(), provideHttpClientTesting()]
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(), { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    provideIonicAngular({ mode: 'ios' }), provideAnimationsAsync(), provideHttpClientTesting(), provideHttpClient(withFetch())]
 };

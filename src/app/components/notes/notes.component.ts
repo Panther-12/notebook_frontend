@@ -24,13 +24,13 @@ export class NotesComponent implements OnInit {
   }
 
   loadNotes(): void {
-    this.notesService.getNotes().subscribe({
-      next: notes => {
+    this.notesService.getNotes().subscribe(
+      notes => {
         this.showSuccess('Notes loaded successfully');
         this.notes = notes
       },
-      error: () => this.showError('Could not load notes'),
-  });
+      error => this.showError('Could not load notes'),
+  );
   }
 
   addNote(): void {

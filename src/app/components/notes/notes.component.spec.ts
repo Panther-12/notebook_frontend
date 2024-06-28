@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { of, throwError } from 'rxjs';
+import { browser, by, element } from 'protractor';
 
 describe('NotesComponent', () => {
   let component: NotesComponent;
@@ -18,12 +19,12 @@ describe('NotesComponent', () => {
 
     await TestBed.configureTestingModule({
       imports: [HttpClientTestingModule, FormsModule, RouterTestingModule, NotesComponent],
-      declarations: [], // Declare the component being tested
+      declarations: [],
       providers: [
         { provide: NotesService, useValue: notesServiceSpy },
         { provide: ActivatedRoute, useValue: { snapshot: { params: {} } } }
       ],
-      schemas: [NO_ERRORS_SCHEMA] // Ignore the dependencies of nested components
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
 
