@@ -13,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { RouterLink } from '@angular/router';
 
+
 @Component({
     selector: 'app-reverse-card',
     standalone: true,

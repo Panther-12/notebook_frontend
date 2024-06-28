@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ReverseCardComponent } from './reverse-card.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations'; 
+import { ActivatedRoute } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('ReverseCardComponent', () => {
   let component: ReverseCardComponent;
@@ -8,7 +11,11 @@ describe('ReverseCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ReverseCardComponent]
+      imports: [NoopAnimationsModule, ReverseCardComponent, RouterTestingModule, HttpClientTestingModule], 
+      declarations: [],
+      providers: [
+        { provide: ActivatedRoute, useValue: { snapshot: { params: {} } } } // Provide a mock for ActivatedRoute
+      ]
     })
     .compileComponents();
 

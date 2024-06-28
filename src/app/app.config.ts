@@ -5,8 +5,9 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideIonicAngular, IonicRouteStrategy } from '@ionic/angular/standalone';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(), provideHttpClient(withFetch()), { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    provideIonicAngular({ mode: 'ios' }), provideAnimationsAsync()]
+    provideIonicAngular({ mode: 'ios' }), provideAnimationsAsync(), provideHttpClientTesting()]
 };

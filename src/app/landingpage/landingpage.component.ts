@@ -1,3 +1,5 @@
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { IonIcon } from '@ionic/angular/standalone';
@@ -7,7 +9,7 @@ import { logoIonic, easelOutline, shieldCheckmarkOutline, accessibilityOutline, 
 @Component({
   selector: 'app-landingpage',
   standalone: true,
-  imports: [RouterLink, IonIcon],
+  imports: [RouterLink, IonIcon, HttpClientModule, HttpClientTestingModule],
   templateUrl: './landingpage.component.html',
   styleUrl: './landingpage.component.css'
 })
