@@ -7,10 +7,10 @@ describe('Notes Component', () => {
     cy.get('.note-item').should('exist');
   });
 
-  // it('should show success message when notes are loaded', () => {
-  //   cy.get('.success-toast').should('be.visible');
-  //   cy.get('.success-toast').should('contain', 'Notes loaded successfully');
-  // });
+  it('should show success message when notes are loaded', () => {
+    cy.get('.success-toast').should('be.visible');
+    cy.get('.success-toast').should('contain', 'Notes loaded successfully');
+  });
 
   it('should add a new note', () => {
     cy.get('.note-form input').type('Test Note');
